@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Генератор идей</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --panel: #0f1b33;
+        --text: #eaf0ff;
+        --muted: #b8c3dd;
+        --accent: #7dd3fc;
+        --line: rgba(255, 255, 255, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans",
+          "Liberation Sans", sans-serif;
+        background: radial-gradient(1200px 600px at 20% 10%, rgba(125, 211, 252, 0.18), transparent 55%),
+          radial-gradient(900px 500px at 80% 0%, rgba(167, 139, 250, 0.16), transparent 50%), var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+      }
+
+      .wrap {
+        max-width: 980px;
+        padding: 28px 16px 48px;
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 18px 18px;
+        border: 1px solid var(--line);
+        background: rgba(15, 27, 51, 0.8);
+        border-radius: 14px;
+        backdrop-filter: blur(6px);
+      }
+
+      h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 70ch;
+      }
+
+      main {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 14px;
+      }
+
+      section {
+        grid-column: span 12;
+        padding: 16px 16px;
+        border: 1px solid var(--line);
+        background: rgba(15, 27, 51, 0.65);
+        border-radius: 14px;
+      }
+
+      @media (min-width: 860px) {
+        section.half {
+          grid-column: span 6;
+        }
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 12px;
+        color: rgba(234, 240, 255, 0.92);
+        border: 1px solid var(--line);
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(125, 211, 252, 0.08);
+      }
+
+      ul,
+      ol {
+        margin: 10px 0 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
+        color: rgba(234, 240, 255, 0.92);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      footer {
+        margin-top: 16px;
+        color: rgba(184, 195, 221, 0.9);
+        font-size: 12px;
+        padding: 12px 2px 0;
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="badge">Контент-идеи • ароматерапия + нутрициология</div>
+        <h1>Генератор идей</h1>
+        <p class="subtitle">
+          Быстрый набор тем для эксперта: идеи постов, сторис на сегодня и компактный контент‑план на неделю.
+        </p>
+      </header>
+
+      <main>
+        <section class="half">
+          <h2>3 пункта по теме ароматерапия и нутрициология</h2>
+          <ul>
+            <li>
+              Аромат как триггер аппетита: какие запахи помогают снизить тягу к сладкому и как безопасно встроить это
+              в рутину.
+            </li>
+            <li>
+              Сон, стресс и пищевые выборы: вечерние эфирные масла + нутри‑поддержка (магний/белок/клетчатка) в одном
+              протоколе.
+            </li>
+            <li>
+              Пищеварение и комфорт: мягкие дыхательные практики с ароматами + питание для микробиоты (пребиотики и
+              ферменты) без «чудо‑обещаний».
+            </li>
+          </ul>
+          <p class="muted">Примечание: эфирные масла не употребляют внутрь без специалиста и показаний.</p>
+        </section>
+
+        <section class="half">
+          <h2>3 идеи сторис на сегодня</h2>
+          <ol>
+            <li>Опрос: «Что чаще мешает держать питание — стресс, сон или режим?» + слайд с вашим мини‑разбором.</li>
+            <li>«Аромат дня»: 1 масло, 2 способа применения (диффузор/роллер), 1 нутри‑совет к нему.</li>
+            <li>Мини‑чек‑лист на вечер: вода + белок на ужин + 5 минут дыхания с ароматом (пошагово).</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>5 идей постов для экспертов</h2>
+          <ol>
+            <li>
+              Мифы и факты: «Ароматерапия = плацебо?» — что говорит практика и где границы метода.
+            </li>
+            <li>
+              Разбор кейса: стресс‑перекусы → план на 7 дней (сон/ритуалы/питание) + «что измеряем» (настроение, голод,
+              энергия).
+            </li>
+            <li>
+              Гайд: как собирать «антистресс‑тарелку» (белок, клетчатка, жиры) и какие запахи поддерживают ощущение
+              спокойствия.
+            </li>
+            <li>
+              Ошибки новичков: почему «здоровое питание» не работает, если не закрыт сон + как добавить вечерний ритуал
+              с ароматами.
+            </li>
+            <li>
+              Экспертный пост‑памятка: безопасность эфирных масел (разведение, противопоказания) + FAQ от подписчиков.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Контент‑план на неделю (пример)</h2>
+          <ul>
+            <li><strong>Пн</strong>: Пост‑гайд «Антистресс‑завтрак» + сторис‑опрос про стресс‑триггеры.</li>
+            <li><strong>Вт</strong>: Рилс/короткое видео «3 запаха для фокуса» + мини‑совет по перекусам.</li>
+            <li><strong>Ср</strong>: Карусель «Сон → аппетит» (гормоны голода/сытости простыми словами) + вечерний чек‑лист.</li>
+            <li><strong>Чт</strong>: Кейс/история клиента (обезличено) + сторис «вопрос‑ответ».</li>
+            <li><strong>Пт</strong>: Пост «Безопасность эфирных масел» + подборка рецептов ужина с белком.</li>
+            <li><strong>Сб</strong>: Прямой эфир/лайв «Планируем неделю питания» + дыхательная практика с ароматом.</li>
+            <li><strong>Вс</strong>: Рефлексия недели: шаблон для заметок + анонс тем на следующую неделю.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        Откройте файл <code>index.html</code> в браузере. Если хотите — скажите, под какую соцсеть/формат (Instagram,
+        Telegram, VK) адаптировать и добавлю готовые тексты под посты.
+      </footer>
+    </div>
+  </body>
+</html>
